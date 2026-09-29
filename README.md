@@ -70,7 +70,7 @@ This repository categorizes the top commercial SaaS solutions and production-gra
 
 ## 💻 Open-Source GitHub Projects 🛠️
 
-*Open-source engines and self-hosted tools for full data sovereignty, customizable pricing rules, and transparent billing pipelines. Ordered descending by GitHub Stars_Count.* ⭐
+*Open-source engines and self-hosted tools for full data sovereignty, customizable pricing rules, and transparent billing pipelines. Ordered descending by GitHub_Stars_Count.* ⭐
 
 1. **[Hyperswitch](https://github.com/juspay/hyperswitch)** [![GitHub_Stars](https://img.shields.io/github/stars/juspay/hyperswitch?style=social&color=white)](https://github.com/juspay/hyperswitch/stargazers) — **45,177 stars** ⭐  
    *Language: Rust 🦀 | License: Apache-2.0*  
@@ -156,7 +156,7 @@ Contributions are welcome! To add or update an entry:
 
 1. Fork this repository. 🔀
 2. Update `README.md` following the existing tabular and list formats. 📝
-3. Ensure open-source entries include valid GitHub Stars_Badges and links. ⭐
+3. Ensure open-source entries include valid GitHub_Stars_Badges and links. ⭐
 4. Submit a Pull Request with a short description of the tool. 🚀
 
 ---
