@@ -1,32 +1,34 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%" style="background:#0b0f19; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="100%" height="100%">
   <defs>
-    <!-- Gradients -->
-    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0e1a"/>
-      <stop offset="50%" stop-color="#111827"/>
-      <stop offset="100%" stop-color="#1e1035"/>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#0f172a" />
     </linearGradient>
 
-    <linearGradient id="title-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#38bdf8"/>
-      <stop offset="50%" stop-color="#818cf8"/>
-      <stop offset="100%" stop-color="#c084fc"/>
+    <!-- Glowing Accent Gradients -->
+    <linearGradient id="primaryGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.8" />
     </linearGradient>
 
-    <linearGradient id="card-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="rgba(56, 189, 248, 0.15)"/>
-      <stop offset="100%" stop-color="rgba(129, 140, 248, 0.05)"/>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.07" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.02" />
     </linearGradient>
 
-    <linearGradient id="card-grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="rgba(192, 132, 252, 0.15)"/>
-      <stop offset="100%" stop-color="rgba(236, 72, 153, 0.05)"/>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="50%" stop-color="#e0e7ff" />
+      <stop offset="100%" stop-color="#c7d2fe" />
     </linearGradient>
 
-    <linearGradient id="pulse-line" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="transparent"/>
-      <stop offset="50%" stop-color="#38bdf8"/>
-      <stop offset="100%" stop-color="transparent"/>
+    <linearGradient id="accentText" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#818cf8" />
+      <stop offset="50%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#f472b6" />
     </linearGradient>
 
     <!-- Filters -->
@@ -35,153 +37,143 @@
       <feComposite in="SourceGraphic" in2="blur" operator="over" />
     </filter>
 
-    <filter id="shadow">
-      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.6"/>
+    <filter id="blurBg" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="40" />
     </filter>
+
+    <!-- Styles for CSS animations -->
+    <style>
+      .pulse-bg {
+        animation: pulseOpacity 6s ease-in-out infinite alternate;
+      }
+      .float-card-1 {
+        animation: floatOne 8s ease-in-out infinite alternate;
+      }
+      .float-card-2 {
+        animation: floatTwo 7s ease-in-out infinite alternate;
+      }
+      .flow-line {
+        stroke-dasharray: 10 15;
+        animation: dashMove 20s linear infinite;
+      }
+      .wave-1 {
+        animation: waveMove1 10s ease-in-out infinite alternate;
+      }
+      .wave-2 {
+        animation: waveMove2 12s ease-in-out infinite alternate;
+      }
+      .stat-bar {
+        animation: barGrow 4s ease-in-out infinite alternate;
+        transform-origin: bottom;
+      }
+
+      @keyframes pulseOpacity {
+        0% { opacity: 0.3; transform: scale(0.98); }
+        100% { opacity: 0.7; transform: scale(1.02); }
+      }
+      @keyframes floatOne {
+        0% { transform: translateY(0px) rotate(0deg); }
+        100% { transform: translateY(-15px) rotate(2deg); }
+      }
+      @keyframes floatTwo {
+        0% { transform: translateY(0px) rotate(0deg); }
+        100% { transform: translateY(12px) rotate(-2deg); }
+      }
+      @keyframes dashMove {
+        to { stroke-dashoffset: -250; }
+      }
+      @keyframes waveMove1 {
+        0% { transform: translateX(0) scaleY(1); }
+        100% { transform: translateX(-30px) scaleY(1.1); }
+      }
+      @keyframes waveMove2 {
+        0% { transform: translateX(0) scaleY(1); }
+        100% { transform: translateX(30px) scaleY(0.9); }
+      }
+    </style>
   </defs>
 
-  <style>
-    /* CSS Keyframe Animations */
-    @keyframes pulseGlow {
-      0%, 100% { opacity: 0.4; transform: scale(1); }
-      50% { opacity: 0.8; transform: scale(1.05); }
-    }
+  <!-- Base Canvas Background -->
+  <rect width="1200" height="360" rx="16" fill="url(#bgGrad)" />
 
-    @keyframes floatCard1 {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-8px); }
-    }
+  <!-- DYNAMIC / ANIMATED BACKGROUND ELEMENTS (Layered behind text) -->
+  <g id="background-animations">
+    <!-- Glowing Orbs -->
+    <circle cx="150" cy="80" r="120" fill="#4f46e5" opacity="0.25" filter="url(#blurBg)" class="pulse-bg" />
+    <circle cx="1050" cy="280" r="140" fill="#9333ea" opacity="0.25" filter="url(#blurBg)" class="pulse-bg" />
+    <circle cx="900" cy="60" r="90" fill="#ec4899" opacity="0.2" filter="url(#blurBg)" class="pulse-bg" />
 
-    @keyframes floatCard2 {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(8px); }
-    }
+    <!-- Grid Pattern Overlay -->
+    <g opacity="0.08" stroke="#ffffff" stroke-width="1">
+      <path d="M 0,60 L 1200,60 M 0,120 L 1200,120 M 0,180 L 1200,180 M 0,240 L 1200,240 M 0,300 L 1200,300" />
+      <path d="M 150,0 L 150,360 M 300,0 L 300,360 M 450,0 L 450,360 M 600,0 L 600,360 M 750,0 L 750,360 M 900,0 L 900,360 M 1050,0 L 1050,360" />
+    </g>
 
-    @keyframes dashMove {
-      0% { stroke-dashoffset: 200; }
-      100% { stroke-dashoffset: 0; }
-    }
+    <!-- Animated Dynamic Flow Lines (Representing Transactions & Event Streams) -->
+    <path class="flow-line wave-1" d="M -50 280 Q 300 340 600 270 T 1250 290" fill="none" stroke="url(#primaryGlow)" stroke-width="2" opacity="0.4" />
+    <path class="flow-line wave-2" d="M -50 90 Q 400 20 800 100 T 1250 40" fill="none" stroke="#818cf8" stroke-width="1.5" opacity="0.3" />
 
-    @keyframes barGrow {
-      0%, 100% { height: 24px; y: 276px; }
-      50% { height: 48px; y: 252px; }
-    }
+    <!-- Left Side Dynamic Element: Ambient Metric Graph (Kept faint & low) -->
+    <g transform="translate(60, 160)" opacity="0.25" class="float-card-1">
+      <rect width="180" height="120" rx="12" fill="url(#cardGrad)" stroke="#ffffff" stroke-opacity="0.1" />
+      <line x1="20" y1="100" x2="160" y2="100" stroke="#64748b" stroke-width="1" />
+      <path d="M 20 80 Q 50 40 80 65 T 140 25 T 160 35" fill="none" stroke="#38bdf8" stroke-width="3" filter="url(#glow)" />
+      <circle cx="140" cy="25" r="4" fill="#38bdf8" />
+    </g>
 
-    .animated-orb-1 {
-      animation: pulseGlow 6s ease-in-out infinite;
-      transform-origin: 200px 100px;
-    }
-
-    .animated-orb-2 {
-      animation: pulseGlow 8s ease-in-out infinite 1s;
-      transform-origin: 1000px 280px;
-    }
-
-    .floating-card-1 {
-      animation: floatCard1 5s ease-in-out infinite;
-    }
-
-    .floating-card-2 {
-      animation: floatCard2 6s ease-in-out infinite 0.5s;
-    }
-
-    .flow-line {
-      stroke-dasharray: 8 8;
-      animation: dashMove 4s linear infinite;
-    }
-
-    .graph-bar-1 { animation: barGrow 3s ease-in-out infinite; }
-    .graph-bar-2 { animation: barGrow 3.5s ease-in-out infinite 0.4s; }
-    .graph-bar-3 { animation: barGrow 2.8s ease-in-out infinite 0.8s; }
-
-    /* Text styling to guarantee text remains crisp and foregrounded */
-    .banner-title {
-      font-size: 54px;
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      fill: url(#title-gradient);
-    }
-
-    .banner-subtitle {
-      font-size: 18px;
-      font-weight: 400;
-      fill: #94a3b8;
-      letter-spacing: 0.01em;
-    }
-
-    .badge-text {
-      font-size: 12px;
-      font-weight: 600;
-      fill: #38bdf8;
-      letter-spacing: 0.05em;
-    }
-  </style>
-
-  <!-- Background Layer -->
-  <rect width="1200" height="360" rx="16" fill="url(#bg-gradient)"/>
-  <rect width="1198" height="358" x="1" y="1" rx="15" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
-
-  <!-- Background Dynamic Glowing Orbs -->
-  <circle class="animated-orb-1" cx="200" cy="80" r="140" fill="#38bdf8" opacity="0.12" filter="url(#glow)"/>
-  <circle class="animated-orb-2" cx="1020" cy="280" r="160" fill="#c084fc" opacity="0.12" filter="url(#glow)"/>
-
-  <!-- Dynamic Decorative Grid Pattern -->
-  <path d="M0 60 H1200 M0 120 H1200 M0 180 H1200 M0 240 H1200 M0 300 H1200" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-  <path d="M150 0 V360 M300 0 V360 M450 0 V360 M600 0 V360 M750 0 V360 M900 0 V360 M1050 0 V360" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-
-  <!-- Background Dynamic Graphic Elements (Side/Bottom to avoid title overlap) -->
-  
-  <!-- Right Graphic: Animated Billing Dashboard Elements -->
-  <g class="floating-card-1" opacity="0.85">
-    <rect x="880" y="50" width="260" height="130" rx="12" fill="url(#card-grad-1)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1" filter="url(#shadow)"/>
-    <text x="900" y="80" font-size="13" font-weight="600" fill="#94a3b8">MONTHLY RECURRING REVENUE</text>
-    <text x="900" y="115" font-size="28" font-weight="700" fill="#f8fafc">$148,250<tspan font-size="14" fill="#34d399"> +18.4%</tspan></text>
-    
-    <!-- Mini Sparkline -->
-    <path d="M900 150 L940 145 L980 148 L1020 135 L1060 138 L1100 125" fill="none" stroke="#38bdf8" stroke-width="2.5" stroke-linecap="round"/>
-    <circle cx="1100" cy="125" r="4" fill="#38bdf8" filter="url(#glow)"/>
+    <!-- Right Side Dynamic Element: Usage/Metering Visual (Kept opacity low & low z-index) -->
+    <g transform="translate(960, 80)" opacity="0.3" class="float-card-2">
+      <rect width="180" height="130" rx="12" fill="url(#cardGrad)" stroke="#ffffff" stroke-opacity="0.1" />
+      <!-- Simulated Bar Chart -->
+      <rect x="25" y="50" width="16" height="50" rx="3" fill="#6366f1" />
+      <rect x="55" y="30" width="16" height="70" rx="3" fill="#a855f7" />
+      <rect x="85" y="65" width="16" height="35" rx="3" fill="#38bdf8" />
+      <rect x="115" y="20" width="16" height="80" rx="3" fill="#ec4899" filter="url(#glow)" />
+      <rect x="145" y="40" width="16" height="60" rx="3" fill="#818cf8" />
+    </g>
   </g>
 
-  <g class="floating-card-2" opacity="0.85">
-    <rect x="840" y="200" width="280" height="120" rx="12" fill="url(#card-grad-2)" stroke="rgba(192, 132, 252, 0.3)" stroke-width="1" filter="url(#shadow)"/>
-    <text x="860" y="228" font-size="13" font-weight="600" fill="#94a3b8">USAGE METERING (EVENTS/SEC)</text>
-    <text x="860" y="262" font-size="24" font-weight="700" fill="#f8fafc">12.4M <tspan font-size="12" fill="#c084fc">events</tspan></text>
-    
-    <!-- Metering Animated Bars -->
-    <rect class="graph-bar-1" x="1030" y="252" width="12" height="40" rx="3" fill="#818cf8"/>
-    <rect class="graph-bar-2" x="1050" y="242" width="12" height="50" rx="3" fill="#c084fc"/>
-    <rect class="graph-bar-3" x="1070" y="262" width="12" height="30" rx="3" fill="#f472b6"/>
-  </g>
+  <!-- FOREGROUND LAYER: MAIN TITLES & SUBTITLES (Guaranteed 100% Crisp Visibility & High Contrast) -->
+  <g id="foreground-content" text-anchor="middle">
+    <!-- Top Pill Badge -->
+    <g transform="translate(600, 52)">
+      <rect x="-140" y="-18" width="280" height="34" rx="17" fill="#1e1b4b" stroke="url(#primaryGlow)" stroke-width="1.5" />
+      <text y="4" fill="#c7d2fe" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" letter-spacing="1.5">
+        💳 RECURRING &amp; USAGE BILLING
+      </text>
+    </g>
 
-  <!-- Dynamic Connecting Flow Lines (Background) -->
-  <path class="flow-line" d="M60 300 Q 250 330, 450 300 T 800 310" fill="none" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5"/>
+    <!-- Title Line 1: Awesome Billing -->
+    <text x="600" y="142" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="52" font-weight="800" letter-spacing="-1">
+      <tspan fill="url(#textGrad)">Awesome </tspan>
+      <tspan fill="url(#accentText)" filter="url(#glow)">Billing</tspan>
+    </text>
 
-  <!-- Pill Chips (Bottom Left) -->
-  <g transform="translate(60, 280)">
-    <rect x="0" y="0" width="140" height="28" rx="14" fill="rgba(56, 189, 248, 0.1)" stroke="rgba(56, 189, 248, 0.3)" stroke-width="1"/>
-    <circle cx="14" cy="14" r="4" fill="#38bdf8"/>
-    <text x="26" y="18" font-size="11" font-weight="600" fill="#38bdf8">USAGE METERING</text>
+    <!-- Subtitle Line: Infrastructure & Ecosystem -->
+    <text x="600" y="195" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="22" font-weight="500" letter-spacing="3">
+      INFRASTRUCTURE &amp; ECOSYSTEM
+    </text>
 
-    <rect x="152" y="0" width="165" height="28" rx="14" fill="rgba(129, 140, 248, 0.1)" stroke="rgba(129, 140, 248, 0.3)" stroke-width="1"/>
-    <circle cx="166" cy="14" r="4" fill="#818cf8"/>
-    <text x="178" y="18" font-size="11" font-weight="600" fill="#818cf8">SUBSCRIPTION ENGINE</text>
+    <!-- Decorative Divider Line -->
+    <line x1="450" y1="225" x2="750" y2="225" stroke="url(#primaryGlow)" stroke-width="2" stroke-linecap="round" opacity="0.8" />
 
-    <rect x="329" y="0" width="160" height="28" rx="14" fill="rgba(192, 132, 252, 0.1)" stroke="rgba(192, 132, 252, 0.3)" stroke-width="1"/>
-    <circle cx="343" cy="14" r="4" fill="#c084fc"/>
-    <text x="355" y="18" font-size="11" font-weight="600" fill="#c084fc">REVENUE OPERATIONS</text>
-  </g>
-
-  <!-- FOREGROUND LAYER: MAIN HEADINGS (Guaranteed high visibility and sharp foreground placement) -->
-  <g transform="translate(60, 110)" filter="url(#shadow)">
-    <!-- Top Category Pill -->
-    <rect x="0" y="-35" width="210" height="26" rx="13" fill="rgba(56, 189, 248, 0.15)" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1"/>
-    <text x="14" y="-18" class="badge-text">BILLING &amp; REV-OPS STACK</text>
-
-    <!-- Main Title -->
-    <text x="0" y="30" class="banner-title">Awesome Billing</text>
-    
-    <!-- Subtitle -->
-    <text x="0" y="72" class="banner-subtitle">Curated List of SaaS Platforms &amp; Open-Source Billing Infrastructure</text>
-    <text x="0" y="96" font-size="14" fill="#64748b" font-weight="500">Subscription Management • Usage-Based Pricing • Invoicing • Metering Engines</text>
+    <!-- Category Pills Foreground Footnote -->
+    <g transform="translate(600, 275)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="500">
+      <!-- Pill 1: Subscription Management -->
+      <g transform="translate(-240, 0)">
+        <rect x="-85" y="-15" width="170" height="30" rx="8" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.15" />
+        <text y="5" fill="#e2e8f0">Subscription Mgmt</text>
+      </g>
+      <!-- Pill 2: Event Metering -->
+      <g transform="translate(0, 0)">
+        <rect x="-75" y="-15" width="150" height="30" rx="8" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.15" />
+        <text y="5" fill="#e2e8f0">Event Metering</text>
+      </g>
+      <!-- Pill 3: Payment Orchestration -->
+      <g transform="translate(240, 0)">
+        <rect x="-90" y="-15" width="180" height="30" rx="8" fill="#ffffff" fill-opacity="0.05" stroke="#ffffff" stroke-opacity="0.15" />
+        <text y="5" fill="#e2e8f0">Payment Orchestration</text>
+      </g>
+    </g>
   </g>
 </svg>
