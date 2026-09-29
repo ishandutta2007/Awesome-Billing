@@ -8,7 +8,7 @@
 [![Awesome](https://awesome.re/badge.svg)](https://github.com/ishandutta2007/Awesome-Awesome-Awesome)
 [![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](#-how-to-contribute)
-[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Billing?style=social)](https://github.com/ishandutta2007/Awesome-Billing/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-Billing?style=social)](https://github.com/ishandutta2007/Awesome-Billing/stargazers)
 <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 
 **A curated list of top SaaS platforms and open-source software for subscription management, usage-based billing, metering engines, payment orchestration, and revenue operations.** 🎯💰
@@ -70,69 +70,69 @@ This repository categorizes the top commercial SaaS solutions and production-gra
 
 ## 💻 Open-Source GitHub Projects 🛠️
 
-*Open-source engines and self-hosted tools for full data sovereignty, customizable pricing rules, and transparent billing pipelines. Ordered descending by GitHub star count.* ⭐
+*Open-source engines and self-hosted tools for full data sovereignty, customizable pricing rules, and transparent billing pipelines. Ordered descending by GitHub Stars_Count.* ⭐
 
-1. **[Hyperswitch](https://github.com/juspay/hyperswitch)** [![GitHub stars](https://img.shields.io/github/stars/juspay/hyperswitch?style=social&color=white)](https://github.com/juspay/hyperswitch/stargazers) — **45,177 stars** ⭐  
+1. **[Hyperswitch](https://github.com/juspay/hyperswitch)** [![GitHub_Stars](https://img.shields.io/github/stars/juspay/hyperswitch?style=social&color=white)](https://github.com/juspay/hyperswitch/stargazers) — **45,177 stars** ⭐  
    *Language: Rust 🦀 | License: Apache-2.0*  
    Open-source, composable payment orchestration platform. Connects 120+ payment processors via a unified API with smart routing, card vaulting, auto-retry revenue recovery, and payment reconciliation. 💳⚡
 
-2. **[Lago](https://github.com/getlago/lago)** [![GitHub stars](https://img.shields.io/github/stars/getlago/lago?style=social&color=white)](https://github.com/getlago/lago/stargazers) — **10,632 stars** ⭐  
+2. **[Lago](https://github.com/getlago/lago)** [![GitHub_Stars](https://img.shields.io/github/stars/getlago/lago?style=social&color=white)](https://github.com/getlago/lago/stargazers) — **10,632 stars** ⭐  
    *Language: Go 🐹 | License: AGPL-3.0*  
    Open-source metering and usage-based billing API designed for AI, cloud, and API products. Handles consumption tracking, tiered pricing models, prepaid credits, and subscription orchestration. 🦩🚀
 
-3. **[Invoice Ninja](https://github.com/invoiceninja/invoiceninja)** [![GitHub stars](https://img.shields.io/github/stars/invoiceninja/invoiceninja?style=social&color=white)](https://github.com/invoiceninja/invoiceninja/stargazers) — **10,126 stars** ⭐  
+3. **[Invoice Ninja](https://github.com/invoiceninja/invoiceninja)** [![GitHub_Stars](https://img.shields.io/github/stars/invoiceninja/invoiceninja?style=social&color=white)](https://github.com/invoiceninja/invoiceninja/stargazers) — **10,126 stars** ⭐  
    *Language: PHP (Laravel) 🐘 | License: Source-Available*  
    Comprehensive self-hosted invoicing, client management, quote generation, and project time-tracking suite built for agencies, freelancers, and small businesses. 🥷🧾
 
-4. **[FlexPrice](https://github.com/flexprice/flexprice)** [![GitHub stars](https://img.shields.io/github/stars/flexprice/flexprice?style=social&color=white)](https://github.com/flexprice/flexprice/stargazers) — **6,927 stars** ⭐  
+4. **[FlexPrice](https://github.com/flexprice/flexprice)** [![GitHub_Stars](https://img.shields.io/github/stars/flexprice/flexprice?style=social&color=white)](https://github.com/flexprice/flexprice/stargazers) — **6,927 stars** ⭐  
    *Language: Go 🐹 | License: AGPL-3.0*  
    Flexible usage-based pricing and billing infrastructure for developers. Features real-time usage metering, credits and top-ups, no-code UI, and feature entitlement control. 🏷️✨
 
-5. **[Kill Bill](https://github.com/killbill/killbill)** [![GitHub stars](https://img.shields.io/github/stars/killbill/killbill?style=social&color=white)](https://github.com/killbill/killbill/stargazers) — **5,766 stars** ⭐  
+5. **[Kill Bill](https://github.com/killbill/killbill)** [![GitHub_Stars](https://img.shields.io/github/stars/killbill/killbill?style=social&color=white)](https://github.com/killbill/killbill/stargazers) — **5,766 stars** ⭐  
    *Language: Java ☕ | License: Apache-2.0*  
    The battle-tested open-source subscription billing and payments platform. Features versioned catalog management, multi-phase subscription engine, plugin system, and the Kaui admin portal. 🗡️💥
 
-6. **[InvoicePlane](https://github.com/InvoicePlane/InvoicePlane)** [![GitHub stars](https://img.shields.io/github/stars/InvoicePlane/InvoicePlane?style=social&color=white)](https://github.com/InvoicePlane/InvoicePlane/stargazers) — **3,145 stars** ⭐  
+6. **[InvoicePlane](https://github.com/InvoicePlane/InvoicePlane)** [![GitHub_Stars](https://img.shields.io/github/stars/InvoicePlane/InvoicePlane?style=social&color=white)](https://github.com/InvoicePlane/InvoicePlane/stargazers) — **3,145 stars** ⭐  
    *Language: PHP 🐘 | License: MIT*  
    Clean, self-hosted open-source application for managing invoices, client records, payments, and quotes without third-party recurring SaaS fees. ✈️📄
 
-7. **[Autumn](https://github.com/useautumn/autumn)** [![GitHub stars](https://img.shields.io/github/stars/useautumn/autumn?style=social&color=white)](https://github.com/useautumn/autumn/stargazers) — **2,692 stars** ⭐  
+7. **[Autumn](https://github.com/useautumn/autumn)** [![GitHub_Stars](https://img.shields.io/github/stars/useautumn/autumn?style=social&color=white)](https://github.com/useautumn/autumn/stargazers) — **2,692 stars** ⭐  
    *Language: TypeScript 🔷 | License: Apache-2.0*  
    Developer-centric billing layer for AI startups that wraps around Stripe. Enables rapid plan setup, credit tracking, and entitlement enforcement in 30 minutes with zero webhooks. 🍂🤖
 
-8. **[Laravel Cashier](https://github.com/laravel/cashier-stripe)** [![GitHub stars](https://img.shields.io/github/stars/laravel/cashier-stripe?style=social&color=white)](https://github.com/laravel/cashier-stripe/stargazers) — **2,548 stars** ⭐  
+8. **[Laravel Cashier](https://github.com/laravel/cashier-stripe)** [![GitHub_Stars](https://img.shields.io/github/stars/laravel/cashier-stripe?style=social&color=white)](https://github.com/laravel/cashier-stripe/stargazers) — **2,548 stars** ⭐  
    *Language: PHP 🐘 | License: MIT*  
    Official Laravel integration package providing an expressive, fluent interface to Stripe subscription billing services, coupons, plan swaps, and PDF invoice downloads. 🏪💳
 
-9. **[OpenMeter](https://github.com/openmeterio/openmeter)** [![GitHub stars](https://img.shields.io/github/stars/openmeterio/openmeter?style=social&color=white)](https://github.com/openmeterio/openmeter/stargazers) — **2,350 stars** ⭐  
+9. **[OpenMeter](https://github.com/openmeterio/openmeter)** [![GitHub_Stars](https://img.shields.io/github/stars/openmeterio/openmeter?style=social&color=white)](https://github.com/openmeterio/openmeter/stargazers) — **2,350 stars** ⭐  
    *Language: Go 🐹 | License: Apache-2.0*  
    Real-time event metering engine built on ClickHouse and Kafka for AI models, DevTools, and APIs. Aggregates millions of usage events per second for consumption-based billing. ⚡⏱️
 
-10. **[Paymenter](https://github.com/Paymenter/Paymenter)** [![GitHub stars](https://img.shields.io/github/stars/Paymenter/Paymenter?style=social&color=white)](https://github.com/Paymenter/Paymenter/stargazers) — **2,321 stars** ⭐  
+10. **[Paymenter](https://github.com/Paymenter/Paymenter)** [![GitHub_Stars](https://img.shields.io/github/stars/Paymenter/Paymenter?style=social&color=white)](https://github.com/Paymenter/Paymenter/stargazers) — **2,321 stars** ⭐  
     *Language: PHP 🐘 | License: MIT*  
     Free open-source webshop and client management portal tailored for hosting providers, integrating with Pterodactyl, cPanel, DirectAdmin, and cPanel. 🖥️🛒
 
-11. **[Lotus](https://github.com/uselotus/lotus)** [![GitHub stars](https://img.shields.io/github/stars/uselotus/lotus?style=social&color=white)](https://github.com/uselotus/lotus/stargazers) — **1,838 stars** ⭐  
+11. **[Lotus](https://github.com/uselotus/lotus)** [![GitHub_Stars](https://img.shields.io/github/stars/uselotus/lotus?style=social&color=white)](https://github.com/uselotus/lotus/stargazers) — **1,838 stars** ⭐  
     *Language: Python 🐍 | License: MIT*  
     Open-source pricing and packaging infrastructure to design, deploy, and experiment with custom billing models, subscription add-ons, and real-time metering. 🪷🧪
 
-12. **[Meteroid](https://github.com/meteroid-oss/meteroid)** [![GitHub stars](https://img.shields.io/github/stars/meteroid-oss/meteroid?style=social&color=white)](https://github.com/meteroid-oss/meteroid/stargazers) — **1,239 stars** ⭐  
+12. **[Meteroid](https://github.com/meteroid-oss/meteroid)** [![GitHub_Stars](https://img.shields.io/github/stars/meteroid-oss/meteroid?style=social&color=white)](https://github.com/meteroid-oss/meteroid/stargazers) — **1,239 stars** ⭐  
     *Language: Rust 🦀 | License: AGPL-3.0*  
     Modern Rust-based billing software designed for PLG companies. Features subscription management, usage metering, cost limiting, and actionable revenue analytics. 🚀📊
 
-13. **[SolidInvoice](https://github.com/SolidInvoice/SolidInvoice)** [![GitHub stars](https://img.shields.io/github/stars/SolidInvoice/SolidInvoice?style=social&color=white)](https://github.com/SolidInvoice/SolidInvoice/stargazers) — **973 stars** ⭐  
+13. **[SolidInvoice](https://github.com/SolidInvoice/SolidInvoice)** [![GitHub_Stars](https://img.shields.io/github/stars/SolidInvoice/SolidInvoice?style=social&color=white)](https://github.com/SolidInvoice/SolidInvoice/stargazers) — **973 stars** ⭐  
     *Language: PHP (Symfony) 🐘 | License: MIT*  
     Elegant invoicing tool for small businesses featuring recurring billing, quotes, multi-currency support, REST API, and built-in AI agent MCP server automation. 💎🤖
 
-14. **[Tier](https://github.com/tierrun/tier)** [![GitHub stars](https://img.shields.io/github/stars/tierrun/tier?style=social&color=white)](https://github.com/tierrun/tier/stargazers) — **969 stars** ⭐  
+14. **[Tier](https://github.com/tierrun/tier)** [![GitHub_Stars](https://img.shields.io/github/stars/tierrun/tier?style=social&color=white)](https://github.com/tierrun/tier/stargazers) — **969 stars** ⭐  
     *Language: Go 🐹 | License: BSD-3-Clause*  
     Tool for managing SaaS pricing models directly from code/JSON configs. Enforces plan limits and metered features backed by Stripe Billing. 🎚️⚙️
 
-15. **[UniBee](https://github.com/UniBee-Billing/unibee)** [![GitHub stars](https://img.shields.io/github/stars/UniBee-Billing/unibee?style=social&color=white)](https://github.com/UniBee-Billing/unibee/stargazers) — **231 stars** ⭐  
+15. **[UniBee](https://github.com/UniBee-Billing/unibee)** [![GitHub_Stars](https://img.shields.io/github/stars/UniBee-Billing/unibee?style=social&color=white)](https://github.com/UniBee-Billing/unibee/stargazers) — **231 stars** ⭐  
     *Language: Docker / Java 🐳 | License: AGPL-3.0*  
     Universal standalone billing platform for SaaS products providing subscription engines, invoice automation, billable metrics, and webhooks. 🐝📦
 
-16. **[Recurso](https://github.com/recurso-dev/recurso)** [![GitHub stars](https://img.shields.io/github/stars/recurso-dev/recurso?style=social&color=white)](https://github.com/recurso-dev/recurso/stargazers) — **5 stars** ⭐  
+16. **[Recurso](https://github.com/recurso-dev/recurso)** [![GitHub_Stars](https://img.shields.io/github/stars/recurso-dev/recurso?style=social&color=white)](https://github.com/recurso-dev/recurso/stargazers) — **5 stars** ⭐  
     *Language: Go 🐹 | License: MIT*  
     Open-source billing engine with a built-in double-entry financial ledger, ASC 606 revenue recognition, smart dunning, and multi-country tax compliance (GST/VAT). 📘⚖️
 
@@ -156,7 +156,7 @@ Contributions are welcome! To add or update an entry:
 
 1. Fork this repository. 🔀
 2. Update `README.md` following the existing tabular and list formats. 📝
-3. Ensure open-source entries include valid GitHub star badges and links. ⭐
+3. Ensure open-source entries include valid GitHub Stars_Badges and links. ⭐
 4. Submit a Pull Request with a short description of the tool. 🚀
 
 ---
